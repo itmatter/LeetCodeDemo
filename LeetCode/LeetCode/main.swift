@@ -8,11 +8,19 @@
 import Foundation
 
 
+
+
+// 验证回文串
+print("验证回文串========================================")
+let s = Reverse();
+print("s.isAnagram : \(s.isPalindrome("0P"))")
+
+
+
 // 有效的字母异位词
 //print("有效的字母异位词========================================")
-
-let s = Reverse();
-print("s.isAnagram : \(s.isAnagram( "anagram", "nagaram" ))")
+//let s = Reverse();
+//print("s.isAnagram : \(s.isAnagram( "anagram", "nagaram" ))")
 
 
 
