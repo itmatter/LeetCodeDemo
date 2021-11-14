@@ -8,12 +8,20 @@
 import Foundation
 
 
+// 有效的字母异位词
+//print("有效的字母异位词========================================")
+
+let s = Reverse();
+print("s.isAnagram : \(s.isAnagram( "anagram", "nagaram" ))")
+
+
+
 
 // 字符串中的第一个唯一字符
 //print("字符串中的第一个唯一字符 ========================================")
 
-let s = Reverse();
-print("s.firstUniqChar : \(s.firstUniqChar( "abxxcbbbba" ))")
+//let s = Reverse();
+//print("s.firstUniqChar : \(s.firstUniqChar( "abxxcbbbba" ))")
 
 
 
