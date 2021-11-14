@@ -45,7 +45,6 @@ class Reverse {
      假设环境不允许存储 64 位整数（有符号或无符号）。
      */
     func reverseInteger(_ x: Int) -> Int {
-
         // 整数为准
         var reduceNum = x;
         var result = 0;
@@ -68,6 +67,35 @@ class Reverse {
         }
         
         return result;
+    }
+    
+    
+    
+    //MARK: - 字符串中的第一个唯一字符
+    func firstUniqChar(_ s: String) -> Int {
+        var hashTable: [Character: Int] = [Character: Int]();
+        var chars : [Character] = [Character]();
+        // 用哈希表存一遍统计次数.
+        for char in s {
+            // 判断哈希表中有没有当前元素
+            if (hashTable[char] != nil) {
+                hashTable[char] = hashTable[char]! + 1;
+            } else {
+                // 没有元素
+                hashTable[char] = 1;
+                chars.append(contentsOf: [char])
+            }
+        }
+
+        // 再次重新遍历一次字符串. 用哈希表查询, 如果有值为1的结果, 就是出现了一次的.
+        var index = 0;
+        for char in s {
+            if hashTable[char] == 1 {
+                return index;
+            }
+            index += 1;
+        }
+        return -1;
     }
 }
 
