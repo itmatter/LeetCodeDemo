@@ -8,12 +8,15 @@
 import Foundation
 
 
-
+// 字符串转换整数 (atoi)
+print("字符串转换整数 (atoi)========================================")
+let s = Reverse();
+print("s.isAnagram : \(s.myAtoi("12  34"))")
 
 // 验证回文串
-print("验证回文串========================================")
-let s = Reverse();
-print("s.isAnagram : \(s.isPalindrome("0P"))")
+//print("验证回文串========================================")
+//let s = Reverse();
+//print("s.isAnagram : \(s.isPalindrome("0P"))")
 
 
 
