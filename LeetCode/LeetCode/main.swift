@@ -7,11 +7,47 @@
 
 import Foundation
 
+func getStringIndex(_ s : String, index: Int) -> Character{
+    return s[s.index(s.startIndex, offsetBy: index)];
+}
 
-// 字符串转换整数 (atoi)
-print("字符串转换整数 (atoi)========================================")
-let s = Reverse();
-print("s.isAnagram : \(s.myAtoi("12  34"))")
+func subStr(_ s : String, startIndex: Int, endIndex: Int) -> String {
+    let startI = s.index(s.startIndex, offsetBy: startIndex);
+    let endI = s.index(s.startIndex, offsetBy: endIndex)
+    let result = s[startI...endI];
+    return String(result);
+}
+
+
+
+let s = "hello world"
+print(subStr(s, startIndex: 2 ,endIndex:  4));
+
+//// strStr()
+//print("strStr()========================================")
+//let s = Reverse();
+//print("s.strStr : \(s.strStr("", "") ) " )
+
+
+
+
+//// strStr()
+//print("strStr()========================================")
+//let s = Reverse();
+//print("s.strStr : \(s.strStr("", "") ) " )
+
+
+
+
+
+//"mississippi"
+//"issip"
+
+//
+//// 字符串转换整数 (atoi)
+//print("字符串转换整数 (atoi)========================================")
+//let s = Reverse();
+//print("s.isAnagram : \(s.myAtoi("12  34"))")
 
 // 验证回文串
 //print("验证回文串========================================")

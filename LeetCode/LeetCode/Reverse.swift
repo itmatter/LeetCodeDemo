@@ -37,7 +37,6 @@ class Reverse {
         print("reverse after : \(s)");
     }
     
-    
     //MARK: - 整数翻转
     /**
      给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。
@@ -68,7 +67,6 @@ class Reverse {
         
         return result;
     }
-    
 
     //MARK: - 字符串中的第一个唯一字符
     func firstUniqChar(_ s: String) -> Int {
@@ -139,7 +137,6 @@ class Reverse {
             return true;
         }
     }
- 
     
     //MARK: - 验证回文串
     func isPalindrome(_ s: String) -> Bool {
@@ -230,6 +227,75 @@ class Reverse {
         }
     
     }
+    
+    
+
+    //MARK: - 实现strStr()
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        if (needle == "") {
+            return 0;
+        }
+        
+
+        
+        
+        if (haystack.count < needle.count) {
+            return -1;
+        }
+        
+        if (haystack.count == needle.count) {
+            return haystack == needle ? 0 : -1;
+        }
+        
+        // 先转为字符数组
+        let haystackChars = haystack.map{$0};
+        let needleChars = needle.map{$0};
+        
+        // 双指针
+        var hayIndex = 0;
+        var needleIndex = 0;
+        // 结束条件,
+        while ( hayIndex < haystack.count && needleIndex < needle.count ) {
+            if (haystackChars[hayIndex] == needleChars[needleIndex]) {
+                // 如果相同
+                needleIndex += 1;
+                hayIndex += 1;
+            } else {
+                // 如果不同, 回退到前面
+                hayIndex = hayIndex - needleIndex + 1;
+                needleIndex = 0;
+            }
+
+        }
+       
+        // 走完了
+        if (needleIndex == needle.count) {
+            // 如果匹配到了
+            return hayIndex - needleIndex;
+        } else {
+            // 如果没有匹配到
+            return -1;
+        }
+    }
+    
+    
+    
+    
+    
+    //MARK: -
+    func getStringIndex(_ s : String, index: Int) -> Character{
+        return s[s.index(s.startIndex, offsetBy: index)];
+    }
+
+    func subStr(_ s : String, startIndex: Int, endIndex: Int) -> String {
+        let startI = s.index(s.startIndex, offsetBy: startIndex);
+        let endI = s.index(s.startIndex, offsetBy: endIndex)
+        let result = s[startI...endI];
+        return String(result);
+    }
+
+    
+    
 }
 
 
