@@ -27,4 +27,33 @@ class ArrayDemo {
         print("整理后的数组, \(nums)")
         return len;
     }
+    
+    // 贪心算法
+    static func maxProfit(_ prices: [Int]) -> Int {
+        if (prices.count < 1) {
+            return 0;
+        }
+        
+        var pri: [Int] = [Int]();
+        
+        var pre = 0;
+        var cur = 1;
+        
+        while ( cur < prices.count) {
+            let diff = (prices[cur]) - prices[pre];
+            pri.append(diff)
+            pre += 1;
+            cur += 1;
+        }
+        
+        var maxProfit = 0;
+        pri.map { value in
+            if ( value > 0 ) {
+                maxProfit += value
+            }
+        }
+        
+        return maxProfit;
+    }
+    
 }
