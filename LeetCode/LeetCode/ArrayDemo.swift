@@ -28,32 +28,24 @@ class ArrayDemo {
         return len;
     }
     
-    // 贪心算法
+    
+    // 买卖股票的最佳时机 II 贪心算法
     static func maxProfit(_ prices: [Int]) -> Int {
         if (prices.count < 1) {
             return 0;
         }
         
-        var pri: [Int] = [Int]();
-        
         var pre = 0;
-        var cur = 1;
-        
-        while ( cur < prices.count) {
-            let diff = (prices[cur]) - prices[pre];
-            pri.append(diff)
-            pre += 1;
-            cur += 1;
-        }
-        
-        var maxProfit = 0;
-        pri.map { value in
-            if ( value > 0 ) {
-                maxProfit += value
+        var max = 0;
+        while ( pre + 1 < prices.count) {
+            let diff = (prices[pre + 1]) - prices[pre];
+            if (diff > 0) {
+                max += diff
             }
+            pre += 1;
         }
         
-        return maxProfit;
+        return max;
     }
     
 }
