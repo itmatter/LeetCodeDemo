@@ -10,9 +10,13 @@ import Foundation
 
 
 print("\n===============")
-var nums = [1,2,3,1];
-print("ArrayDemo.maxProfit(nums) \(ArrayDemo.containsDuplicate(nums))")
+var nums = [1,4,3,3,4];
+print("ArrayDemo.singleNumber(nums) \(ArrayDemo.singleNumber(nums))")
 
+
+//print("\n===============")
+//var nums = [1,2,3,1];
+//print("ArrayDemo.containsDuplicate(nums) \(ArrayDemo.containsDuplicate(nums))")
 
 
 //
