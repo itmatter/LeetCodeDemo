@@ -48,4 +48,33 @@ class ArrayDemo {
         return max;
     }
     
+    
+    // 旋转数组
+    static func reserve(_ nums:inout [Int], left: Int, right: Int) {
+        // 翻转数组
+        var left = left;
+        var right = right;
+        
+        var temp = 0;
+        
+        while (left < right) {
+            temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            left += 1;
+            right -= 1;
+        }
+    }
+    static func rotate(_ nums: inout [Int], _ k: Int) {
+        var index = k ;
+        if ( index > nums.count ) {
+            index = index % nums.count
+        }
+        // 旋转数组
+        ArrayDemo.reserve(&nums, left: 0, right: nums.count - 1);
+        ArrayDemo.reserve(&nums, left: 0, right: index - 1);
+        ArrayDemo.reserve(&nums, left: index, right: nums.count - 1);
+        print(nums);
+    }
+    
 }
