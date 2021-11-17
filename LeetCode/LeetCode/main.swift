@@ -9,9 +9,17 @@ import Foundation
 
 
 
+
 print("\n===============")
-var nums = [1,4,3,3,4];
-print("ArrayDemo.singleNumber(nums) \(ArrayDemo.singleNumber(nums))")
+var nums1 = [4,9,5];
+var nums2 = [9,4,9,8,4];
+print("ArrayDemo.intersect(nums) \(ArrayDemo.intersect(nums1, nums2))")
+
+
+
+//print("\n===============")
+//var nums = [1,4,3,3,4];
+//print("ArrayDemo.singleNumber(nums) \(ArrayDemo.singleNumber(nums))")
 
 
 //print("\n===============")

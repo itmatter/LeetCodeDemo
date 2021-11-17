@@ -113,4 +113,40 @@ class ArrayDemo {
 
         
     }
+    
+    
+    
+    // 两个数组的交集 II 哈希表
+    static func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        
+        // 一个存hashMap
+        // 一个遍历
+        var hashMap : Dictionary<String, Int> = [:];
+
+        var result : [Int] = [Int]();
+        
+        // 存储到哈希表中
+        _ = nums1.map { value in
+            if (hashMap[String(value)] == nil ) {
+                hashMap[String(value)] = 1
+            } else if (hashMap[String(value)] != nil) {
+                hashMap[String(value)] = hashMap[String(value)]! + 1
+            }
+        }
+        
+        _ = nums2.map { value in
+            if (hashMap[String(value)] != nil && hashMap[String(value)] != 0 ) {
+                result.append(value)
+                hashMap[String(value)] = hashMap[String(value)]! - 1
+            }
+        }
+        
+        return result;
+
+        
+    }
+    
+    
+    
+    
 }
