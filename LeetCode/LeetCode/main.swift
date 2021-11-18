@@ -10,11 +10,20 @@ import Foundation
 
 
 
-print("\n===============")
-var nums1 = [4,9,5];
-var nums2 = [9,4,9,8,4];
-print("ArrayDemo.intersect(nums) \(ArrayDemo.intersect(nums1, nums2))")
 
+
+print("\n===============")
+var nums1 = [0,0,0,0,0,1];
+ArrayDemo.moveZeroes(&nums1)
+print("ArrayDemo.moveZeroes(nums) \(nums1)")
+
+
+//
+//print("\n===============")
+//var nums1 = [4,9,5];
+//var nums2 = [9,4,9,8,4];
+//print("ArrayDemo.intersect(nums) \(ArrayDemo.intersect(nums1, nums2))")
+//
 
 
 //print("\n===============")
