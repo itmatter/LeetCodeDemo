@@ -193,5 +193,32 @@ class LinkListDemo {
         
         return head;
     }
+ 
     
+    // 回文链表, (栈)
+    static func isPalindrome(_ head: ListNode?) -> Bool {
+        if (head != nil && head?.next == nil) {
+            return true;
+        }
+        var stackArr : [ListNode] = [ListNode]();
+        var h = head;
+        // 全部压栈
+        while (h != nil) {
+            stackArr.append(h!)
+            h = h?.next
+        }
+        
+        // 一个一个出栈比较
+        h = head;
+        while (h != nil) {
+            // 取出栈顶元素
+            let popElment = stackArr.last
+            if (popElment!.val != h!.val ) {
+                break;
+            }
+            stackArr.removeLast();
+            h = h?.next
+        }
+        return stackArr.count == 0;
+    }
 }
