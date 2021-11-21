@@ -58,4 +58,72 @@ class LinkListDemo {
         
         return head
     }
+    
+    
+    // (递归)反转链表
+    static func reverseList(_ head: ListNode?) -> ListNode? {
+        // 递归的思考
+        // 第一步, 思考这个函数的功能 , 返回一个节点的下一个节点.
+        // 第二步, 思考这个函数的终止条件, 当前的为空
+        // 第三步, 思考这个函数的执行逻辑
+        //  返回了当前节点, 当前节点的下一个节点指向上一个递归函数的节点.
+        if (head == nil || head?.next == nil) {
+            return head;
+        }
+        
+        // 这里不需要思考, 这里的功能函数就是一个节点.
+        let reverse = reverseList(head!.next);
+        
+        // 写出过程
+        // 原  6 -> 5 -> 4 -> 3 -> 2 -> 1
+        //
+        // 思路 :
+        //  翻转 : 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> nil
+        //  翻转 :      5 -> 4 -> 3 -> 2 -> 1 -> nil
+        //  翻转 :           4 -> 3 -> 2 -> 1 -> nil
+        //  翻转 :                3 -> 2 -> 1 -> nil
+        //  翻转 :                     2 -> 1 -> nil
+       
+        let next = head!.next;
+        print("next : \(next?.val) , head = \(head!.val)" )
+        next!.next = head;
+        head!.next = nil;
+        // 2->1->nil
+        // 1->2
+        // 2->nil
+        
+        // 3->2->nil
+        // 1->2->3
+        // 3->nil
+        
+        // ...
+        // ...
+        // ...
+        return reverse;
+    }
+    
+    
+    // (非递归)翻转链表
+    static func reverseList2(_ head: ListNode?) -> ListNode? {
+        var nHead : ListNode? = nil;
+        var next : ListNode? = nil;
+        var pre : ListNode? = nil;
+
+        // 双指针
+        next = head;
+        // 原  6 -> 5 -> 4 -> 3 -> 2 -> 1
+        while (next != nil) {
+            // 获取当前head的节点
+            pre = next;
+            // 先指向head的下一个节点
+            next = next?.next;
+            // 新的pre的下一个节点指向nHead, 形成翻转
+            pre!.next = nHead;
+            // 新的nHead的下一个节点指向
+            nHead = pre;
+        }
+        return nHead;
+    }
+
+    
 }
