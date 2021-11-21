@@ -7,29 +7,27 @@
 
 import Foundation
 
-let node1 = ListNode(1, nil)
-let node2 = ListNode(2, node1)
-let node3 = ListNode(3, node2)
-let node4 = ListNode(4, node3)
-let node5 = ListNode(5, node4)
-let node6 = ListNode(6, node5)
-
-// 6->5 4 3 2 1 nil
-
-var head : ListNode? = node6
 
 
 
-head = LinkListDemo.reverseList2(head)
+//let head1 = ListNode(1, ListNode(3, ListNode(5, ListNode(7, ListNode(9, nil)))))
+let head1 = ListNode(0, nil)
+//let head2 = ListNode(2, ListNode(4, ListNode(6, ListNode(8, nil))))
+let head2 : ListNode? = nil
+// 合并两个有序链表
+let headCom = LinkListDemo.mergeTwoLists(head1,head2);
+LinkListDemo.logListList(headCom);
+
+// 翻转链表
+//head = LinkListDemo.reverseList2(head)
 
 //LinkListDemo.removeNthFromEnd(head, 1)
 
-
 //LinkListDemo.deleteNode(node2)
 
+//logListList(head1);
+//logListList(head2);
 
-while (head != nil) {
-    print("\(head!.val)")
-    head = head!.next
-}
+
+
 

@@ -17,6 +17,16 @@ public class ListNode {
 }
 
 class LinkListDemo {
+    
+    static func logListList(_ head: ListNode?) {
+        var headN = head;
+        while (headN != nil) {
+            print("\(headN!.val)")
+            headN = headN!.next
+        }
+    }
+    
+    
     // 删除链表中的节点
     // 题目数据保证需要删除的节点 不是末尾节点 。
     static func deleteNode(_ node: ListNode?) {
@@ -124,6 +134,64 @@ class LinkListDemo {
         }
         return nHead;
     }
+    
+    
+    // 合并两个有序链表 (双指针)
+    static func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        if (l1 == nil && l2 == nil) {
+            return nil;
+        }
+        if (l1 == nil) {
+            return l2
+        }
+        if (l2 == nil) {
+            return l1
+        }
+        
+        var list1Node = l1;
+        var list2Node = l2;
+        
+        var head : ListNode? = nil;
+        var next : ListNode? = nil;
 
+        // 初始条件
+        if (list1Node!.val <= list2Node!.val) {
+            head = list1Node;
+            list1Node = list1Node?.next;
+        } else {
+            head = list2Node;
+            list2Node = list2Node?.next;
+        }
+        next = head;
+        
+        
+        while(list1Node != nil && list2Node != nil) {
+            // 下一个条件
+            if (list1Node!.val <= list2Node!.val) {
+                next?.next = list1Node;
+                list1Node = list1Node?.next;
+            } else {
+                next?.next = list2Node;
+                list2Node = list2Node?.next;
+            }
+            next = next?.next;
+        }
+        
+        //加上后面的
+        while (list1Node != nil) {
+            next?.next = list1Node;
+            list1Node = list1Node?.next;
+            next = next?.next;
+        }
+        
+        //加上后面的
+        while (list2Node != nil) {
+            next?.next = list2Node;
+            list2Node = list2Node?.next;
+            next = next?.next;
+        }
+        
+        return head;
+    }
     
 }
