@@ -11,6 +11,7 @@
 		040822402740F68F007BD64F /* StringDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408223F2740F68F007BD64F /* StringDemo.swift */; };
 		0408A6112743ECFE0004B409 /* ArrayDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6102743ECFE0004B409 /* ArrayDemo.swift */; };
 		0408A6132746A2E20004B409 /* LinkListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6122746A2E20004B409 /* LinkListDemo.swift */; };
+		04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E16FF8274A32B800AACCC0 /* TreeDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		0408223F2740F68F007BD64F /* StringDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDemo.swift; sourceTree = "<group>"; };
 		0408A6102743ECFE0004B409 /* ArrayDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDemo.swift; sourceTree = "<group>"; };
 		0408A6122746A2E20004B409 /* LinkListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListDemo.swift; sourceTree = "<group>"; };
+		04E16FF8274A32B800AACCC0 /* TreeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0408223F2740F68F007BD64F /* StringDemo.swift */,
 				0408A6102743ECFE0004B409 /* ArrayDemo.swift */,
 				0408A6122746A2E20004B409 /* LinkListDemo.swift */,
+				04E16FF8274A32B800AACCC0 /* TreeDemo.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			files = (
 				0408A6132746A2E20004B409 /* LinkListDemo.swift in Sources */,
 				0408A6112743ECFE0004B409 /* ArrayDemo.swift in Sources */,
+				04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */,
 				040822392740F5F1007BD64F /* main.swift in Sources */,
 				040822402740F68F007BD64F /* StringDemo.swift in Sources */,
 			);
