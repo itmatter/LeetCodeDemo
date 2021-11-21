@@ -8,12 +8,21 @@
 import Foundation
 
 
+let node5 = ListNode(5,nil)
+let node4 = ListNode(4,node5)
+let node3 = ListNode(3,node4)
+let node2 = ListNode(2,node3)
+let node1 = ListNode(1,node2)
+
+//node5.next = node3
+
+print("是否有环 : \(LinkListDemo.hasCycle(node1))");
 
 //let head = ListNode(1, ListNode(2, ListNode(2, ListNode(1, nil))))
 //let head = ListNode(1, ListNode(2, ListNode(1, nil)))
 //let head = ListNode(1, ListNode(2, nil))
 //let head = ListNode(1,nil)
-print("是否回文 : \(LinkListDemo.isPalindrome(head))");
+//print("是否回文 : \(LinkListDemo.isPalindrome(head))");
 
 //let head1 = ListNode(1, ListNode(3, ListNode(5, ListNode(7, ListNode(9, nil)))))
 //let head1 = ListNode(0, nil)
