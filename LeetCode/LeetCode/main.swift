@@ -26,22 +26,26 @@ let treeNode6   = TreeNode(6, nil, nil)
 
 let treeNode5   = TreeNode(5, nil, nil)
 let treeNode4   = TreeNode(4, nil, nil)
+//
+//let treeNode3   = TreeNode(3, treeNode6, treeNode7)
+//let treeNode2   = TreeNode(2, treeNode4, treeNode5)
 
-let treeNode3   = TreeNode(3, treeNode6, treeNode7)
-let treeNode2   = TreeNode(2, treeNode4, treeNode5)
 
-let treeNode1   = TreeNode(1, treeNode2, treeNode3)
+let treeNode3   = TreeNode(3, nil, nil)
+let treeNode2   = TreeNode(1, nil, nil)
+
+let treeNode1   = TreeNode(2, treeNode2, treeNode3)
 
 let rootNode = treeNode1
 
-//print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
+print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
 
 
-print("TreeDemo.DLR(rootNode) : \(TreeDemo.DLR(rootNode))")
-print("=========================")
-print("TreeDemo.LDR(rootNode) : \(TreeDemo.LDR(rootNode))")
-print("=========================")
-print("TreeDemo.LRD(rootNode) : \(TreeDemo.LRD(rootNode))")
+//print("TreeDemo.DLR(rootNode) : \(TreeDemo.DLR(rootNode))")
+//print("=========================")
+//print("TreeDemo.LDR(rootNode) : \(TreeDemo.LDR(rootNode))")
+//print("=========================")
+//print("TreeDemo.LRD(rootNode) : \(TreeDemo.LRD(rootNode))")
 
 
 //print("TreeDemo.maxDepth(rootNode) : \(TreeDemo.maxDepth(rootNode))")

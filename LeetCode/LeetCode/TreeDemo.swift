@@ -192,11 +192,26 @@ class TreeDemo {
     //
     //  中序遍历的思想 LDR
     static func isValidBST(_ root: TreeNode?) -> Bool {
+        var list = [Int]()
+        var isValid = true
         if (root == nil) {
             return false
         }
-       
-        return false
+        // 中序遍历思想 , 左 根 右
+        LDRCheck(root, &list, &isValid)
+        return isValid
+    }
+    
+    static func LDRCheck(_ root: TreeNode? , _ list : inout [Int], _ isValid: inout Bool) {
+        if (root == nil || !isValid) {
+            return;
+        }
+        LDRCheck(root?.left, &list, &isValid);
+        if (list.last != nil && root!.val <= list.last!) {
+            isValid = false
+        }
+        list.append(root!.val)
+        LDRCheck(root?.right, &list, &isValid);
     }
     
 
