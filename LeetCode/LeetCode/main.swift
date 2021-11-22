@@ -21,31 +21,30 @@ import Foundation
  */
 
 
-let treeNode1   = TreeNode(1, nil, nil)
-let treeNode2   = TreeNode(2, nil, nil)
-
-
-let treeNode5   = TreeNode(5, treeNode1, treeNode2)
+let treeNode7   = TreeNode(7, nil, nil)
 let treeNode6   = TreeNode(6, nil, nil)
 
-let treeNode15  = TreeNode(15, nil, nil)
-let treeNode7   = TreeNode(7, nil, nil)
+let treeNode5   = TreeNode(5, nil, nil)
+let treeNode4   = TreeNode(4, nil, nil)
 
-let treeNode20  = TreeNode(20, treeNode15, nil)
-let treeNode9   = TreeNode(9, treeNode7, nil)
+let treeNode3   = TreeNode(3, treeNode6, treeNode7)
+let treeNode2   = TreeNode(2, treeNode4, treeNode5)
 
-let treeNode3   = TreeNode(3, treeNode9, treeNode20)
+let treeNode1   = TreeNode(1, treeNode2, treeNode3)
 
-let rootNode = treeNode3
+let rootNode = treeNode1
 
-//          3
-//         / \
-//        9  20
-//       /   /
-//      7   15
+//print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
 
 
-print("TreeDemo.maxDepth(rootNode) : \(TreeDemo.maxDepth(rootNode))")
-print("TreeDemo.maxDepthBFS(rootNode) : \(TreeDemo.maxDepthBFS(rootNode))")
-print("TreeDemo.maxDepthDFS(rootNode) : \(TreeDemo.maxDepthDFS(rootNode))")
+print("TreeDemo.DLR(rootNode) : \(TreeDemo.DLR(rootNode))")
+print("=========================")
+print("TreeDemo.LDR(rootNode) : \(TreeDemo.LDR(rootNode))")
+print("=========================")
+print("TreeDemo.LRD(rootNode) : \(TreeDemo.LRD(rootNode))")
+
+
+//print("TreeDemo.maxDepth(rootNode) : \(TreeDemo.maxDepth(rootNode))")
+//print("TreeDemo.maxDepthBFS(rootNode) : \(TreeDemo.maxDepthBFS(rootNode))")
+//print("TreeDemo.maxDepthDFS(rootNode) : \(TreeDemo.maxDepthDFS(rootNode))")
 

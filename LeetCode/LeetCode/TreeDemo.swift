@@ -116,5 +116,88 @@ class TreeDemo {
         return maxLevel
     }
     
+ 
     
+    // 前序遍历 中序遍历 后序遍历
+    //            1
+    //         /      \
+    //        2        3
+    //       / \      / \
+    //      4   5    6   7
+    
+    // DLR--前序遍历（根在前，从左往右，一棵树的根永远在左子树前面，左子树又永远在右子树前面 ）
+    //          1->2->4->5->3->6->7
+    static func DLR(_ root: TreeNode?) -> [Int] {
+        var list = [Int]()
+        TreeDemo.DLR_Recursion(root, &list)
+        return list;
+    }
+    
+    static func DLR_Recursion(_ root: TreeNode?, _ list : inout [Int]) {
+        if (root == nil) {
+            return;
+        }
+        list.append(root!.val)
+        DLR_Recursion(root!.left, &list)
+        DLR_Recursion(root!.right, &list)
+    }
+    
+    
+    // LDR--中序遍历（根在中，从左往右，一棵树的左子树永远在根前面，根永远在右子树前面）
+    //          4->2->5->1->6->3->7
+    static func LDR(_ root: TreeNode?) -> [Int] {
+        var list = [Int]()
+        TreeDemo.LDR_Recursion(root, &list)
+        return list;
+    }
+    
+    static func LDR_Recursion(_ root: TreeNode?, _ list : inout [Int]) {
+        if (root == nil) {
+            return;
+        }
+        LDR_Recursion(root!.left, &list)
+        list.append(root!.val)
+        LDR_Recursion(root!.right, &list)
+    }
+    
+    
+    
+    // LRD--后序遍历（根在后，从左往右，一棵树的左子树永远在右子树前面，右子树永远在根前面）
+    //          4->5->2->6->7->3->1
+    static func LRD(_ root: TreeNode?) -> [Int] {
+        var list = [Int]()
+        TreeDemo.LRD_Recursion(root, &list)
+        return list;
+    }
+    
+    static func LRD_Recursion(_ root: TreeNode?, _ list : inout [Int]) {
+        if (root == nil) {
+            return;
+        }
+        LRD_Recursion(root!.left, &list)
+        LRD_Recursion(root!.right, &list)
+        list.append(root!.val)
+    }
+    
+    
+    // 总结, 需要存结果的递归, 就单独开一个函数.
+    
+
+    // 验证二叉搜索树 (中序遍历)
+    //  给你一个二叉树的根节点 root ，判断其是否是一个有效的二叉搜索树。
+    //  有效 二叉搜索树定义如下：
+    //      节点的左子树只包含 小于 当前节点的数。
+    //      节点的右子树只包含 大于 当前节点的数。
+    //      所有左子树和右子树自身必须也是二叉搜索树。
+    //
+    //  中序遍历的思想 LDR
+    static func isValidBST(_ root: TreeNode?) -> Bool {
+        if (root == nil) {
+            return false
+        }
+       
+        return false
+    }
+    
+
 }
