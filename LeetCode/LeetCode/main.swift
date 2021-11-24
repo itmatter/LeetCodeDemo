@@ -7,53 +7,10 @@
 
 import Foundation
 
+var num1 = [1,2,3,0,0,0]
+let m = 3
+let num2 = [2,5,6]
+let n = 3
 
-/*
-     3
-    / \
-    9  20
-      /  \
-     15   7
-    /  \
-    5   6
-   /  \
-   1   2
- */
-
-
-let treeNode7   = TreeNode(7, nil, nil)
-let treeNode6   = TreeNode(6, nil, nil)
-
-let treeNode5   = TreeNode(3, nil, nil)
-let treeNode4   = TreeNode(3, nil, nil)
-//
-let treeNode3   = TreeNode(1, nil, treeNode5)
-let treeNode2   = TreeNode(1, treeNode4, nil)
-
-
-//let treeNode3   = TreeNode(3, nil, nil)
-//let treeNode2   = TreeNode(3, nil, nil)
-
-let treeNode1   = TreeNode(2, treeNode2, treeNode3)
-
-let rootNode = treeNode1
-
-
-
-print("TreeDemo.isSymmetric(rootNode) : \(TreeDemo.levelOrder(rootNode))")
-
-
-
-//print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
-
-//print("TreeDemo.DLR(rootNode) : \(TreeDemo.DLR(rootNode))")
-//print("=========================")
-//print("TreeDemo.LDR(rootNode) : \(TreeDemo.LDR(rootNode))")
-//print("=========================")
-//print("TreeDemo.LRD(rootNode) : \(TreeDemo.LRD(rootNode))")
-
-
-//print("TreeDemo.maxDepth(rootNode) : \(TreeDemo.maxDepth(rootNode))")
-//print("TreeDemo.maxDepthBFS(rootNode) : \(TreeDemo.maxDepthBFS(rootNode))")
-//print("TreeDemo.maxDepthDFS(rootNode) : \(TreeDemo.maxDepthDFS(rootNode))")
-
+SortDemo.merge(&num1, m, num2, n)
+print(num1)
