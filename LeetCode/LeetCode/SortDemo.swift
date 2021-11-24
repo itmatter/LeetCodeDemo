@@ -30,23 +30,28 @@ class SortDemo {
             if (index1 < 0) {
                 nums1[lastIndex] = nums2[index2]
                 index2 -= 1
-            } else if (index2 < 0) {
+                lastIndex -= 1;
+                continue
+            }
+            
+            if (index2 < 0) {
                 nums1[lastIndex] = nums1[index1]
                 index1 -= 1
+                lastIndex -= 1;
+                continue
+            }
+            
+            
+            if (nums2[index2] >= nums1[index1]  ) {
+                nums1[lastIndex] = nums2[index2]
+                index2 -= 1
             } else {
-                if (nums2[index2] >= nums1[index1]  ) {
-                    nums1[lastIndex] = nums2[index2]
-                    index2 -= 1
-                } else {
-                    nums1[lastIndex] = nums1[index1]
-                    index1 -= 1
-                }
+                nums1[lastIndex] = nums1[index1]
+                index1 -= 1
             }
             lastIndex -= 1;
         }
         nums1 = Array(nums1.prefix(m+n))
-
-        print(nums1)
     }
     
 }
