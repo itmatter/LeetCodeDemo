@@ -24,22 +24,27 @@ import Foundation
 let treeNode7   = TreeNode(7, nil, nil)
 let treeNode6   = TreeNode(6, nil, nil)
 
-let treeNode5   = TreeNode(5, nil, nil)
-let treeNode4   = TreeNode(4, nil, nil)
+let treeNode5   = TreeNode(3, nil, nil)
+let treeNode4   = TreeNode(3, nil, nil)
 //
-//let treeNode3   = TreeNode(3, treeNode6, treeNode7)
-//let treeNode2   = TreeNode(2, treeNode4, treeNode5)
+let treeNode3   = TreeNode(1, nil, treeNode5)
+let treeNode2   = TreeNode(1, treeNode4, nil)
 
 
-let treeNode3   = TreeNode(3, nil, nil)
-let treeNode2   = TreeNode(1, nil, nil)
+//let treeNode3   = TreeNode(3, nil, nil)
+//let treeNode2   = TreeNode(3, nil, nil)
 
 let treeNode1   = TreeNode(2, treeNode2, treeNode3)
 
 let rootNode = treeNode1
 
-print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
 
+
+print("TreeDemo.isSymmetric(rootNode) : \(TreeDemo.levelOrder(rootNode))")
+
+
+
+//print("TreeDemo.isValidBST(rootNode) : \(TreeDemo.isValidBST(rootNode))")
 
 //print("TreeDemo.DLR(rootNode) : \(TreeDemo.DLR(rootNode))")
 //print("=========================")

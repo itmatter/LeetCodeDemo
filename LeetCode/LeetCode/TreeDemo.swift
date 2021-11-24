@@ -214,5 +214,40 @@ class TreeDemo {
         LDRCheck(root?.right, &list, &isValid);
     }
     
-
+    
+    
+    // 二叉树的层序遍历
+    // 广度优先的方法 (先进先出)
+    static func levelOrder(_ root: TreeNode?) -> [[Int]] {
+        if (root == nil) {
+            return []
+        }
+        
+        var queue : [TreeNode] = [TreeNode]()
+        queue.append(root!)
+        var result : [[Int]] = [[Int]]();
+        
+        while (!queue.isEmpty) {
+            var size = queue.count
+            var list : [Int] = [Int]()
+            while (size > 0) {
+                // 元素出列
+                let node = queue.first
+                queue.remove(at: 0)
+                list.append(node!.val)
+                
+                if (node!.left != nil) {
+                    queue.append(node!.left!);
+                }
+                
+                if (node!.right != nil) {
+                    queue.append(node!.right!);
+                }
+                size -= 1
+            }
+            result.append(list)
+        }
+        
+        return result
+    };
 }
