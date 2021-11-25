@@ -8,6 +8,19 @@
 import Foundation
 
 
+
+//SortDemo.firstBadVersion(15);
+
+//var num1 = [2,2,3,0,0,0]
+//let m = 3
+//let num2 = [1,1,6]
+//let n = 3
+//
+//SortDemo.merge(&num1, m, num2, n)
+//print(num1)
+
+
+
 class SortDemo {
     
     // 合并两个有序(升序)数组 双指针
@@ -54,4 +67,5 @@ class SortDemo {
         nums1 = Array(nums1.prefix(m+n))
     }
     
+
 }

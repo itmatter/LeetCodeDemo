@@ -12,6 +12,7 @@
 		0408A6112743ECFE0004B409 /* ArrayDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6102743ECFE0004B409 /* ArrayDemo.swift */; };
 		0408A6132746A2E20004B409 /* LinkListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6122746A2E20004B409 /* LinkListDemo.swift */; };
 		0477C634274E87450069DC3F /* SortDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C633274E87450069DC3F /* SortDemo.swift */; };
+		0477C636274FC8FC0069DC3F /* DPDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C635274FC8FC0069DC3F /* DPDemo.swift */; };
 		04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E16FF8274A32B800AACCC0 /* TreeDemo.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		0408A6102743ECFE0004B409 /* ArrayDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDemo.swift; sourceTree = "<group>"; };
 		0408A6122746A2E20004B409 /* LinkListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListDemo.swift; sourceTree = "<group>"; };
 		0477C633274E87450069DC3F /* SortDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDemo.swift; sourceTree = "<group>"; };
+		0477C635274FC8FC0069DC3F /* DPDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDemo.swift; sourceTree = "<group>"; };
 		04E16FF8274A32B800AACCC0 /* TreeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				0408A6122746A2E20004B409 /* LinkListDemo.swift */,
 				04E16FF8274A32B800AACCC0 /* TreeDemo.swift */,
 				0477C633274E87450069DC3F /* SortDemo.swift */,
+				0477C635274FC8FC0069DC3F /* DPDemo.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				0408A6132746A2E20004B409 /* LinkListDemo.swift in Sources */,
 				0408A6112743ECFE0004B409 /* ArrayDemo.swift in Sources */,
+				0477C636274FC8FC0069DC3F /* DPDemo.swift in Sources */,
 				04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */,
 				040822392740F5F1007BD64F /* main.swift in Sources */,
 				0477C634274E87450069DC3F /* SortDemo.swift in Sources */,
