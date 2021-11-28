@@ -7,25 +7,23 @@
 
 import Foundation
 
-
-
 /**
- * Your CQueue object will be instantiated and called as such:
- * let obj = CQueue()
- * obj.appendTail(value)
- * let ret_2: Int = obj.deleteHead()
+ * Your MinStack object will be instantiated and called as such:
+ * let obj = MinStack()
+ * obj.push(x)
+ * obj.pop()
+ * let ret_3: Int = obj.top()
+ * let ret_4: Int = obj.min()
  */
-let obj = CQueue()
 
-for i in 0...2 {
-    obj.appendTail(i)
-}
-for _ in 0...1 {
-    print(obj.deleteHead())
-}
-for i in 0...2 {
-    obj.appendTail(i)
-}
-for _ in 0...2 {
-    print(obj.deleteHead())
-}
+let obj = MinStack()
+obj.push(-2)
+obj.push(0)
+obj.push(-3)
+print( obj.stackArrA)
+
+print( obj.min())
+obj.pop()
+print( obj.top())
+print( obj.min())
+
