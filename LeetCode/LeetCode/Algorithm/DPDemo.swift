@@ -19,6 +19,26 @@ import Foundation
 //      最后一步
 //      子问题
 
+
+//
+//let nums = [1,2,3,4]
+//print("DPDemo.rob : \(DPDemo.rob(nums))")
+
+//print(Date.init(timeIntervalSinceNow: 0))
+//let prices = [1,2,-1,2]
+//print("DPDemo.maxProfit : \(DPDemo.maxSubArray(prices))")
+//print(Date.init(timeIntervalSinceNow: 0))
+
+//print(Date.init(timeIntervalSinceNow: 0))
+////let prices = [7,1,5,3,6,4]
+//let prices = [1,3,2,5]
+//print("DPDemo.maxProfit : \(DPDemo.maxProfit(prices))")
+//print(Date.init(timeIntervalSinceNow: 0))
+
+//print("DPDemo.climbStairs : \(DPDemo.climbStairs(5))")
+
+
+
 class DPDemo {
     
     // 爬楼梯
@@ -111,8 +131,8 @@ class DPDemo {
         
         while (i < len) {
             dp = max(nums[i], dp + nums[i])
+            print(dp)
             maxResult = max(dp, maxResult)
-            print("nums[i] : \(nums[i])     dp : \(dp)      maxResult:\(maxResult)")
             i += 1
         }
         

@@ -8,21 +8,24 @@
 import Foundation
 
 
-let nums = [1,2,3,4]
-print("DPDemo.rob : \(DPDemo.rob(nums))")
 
-//
-//print(Date.init(timeIntervalSinceNow: 0))
-//let prices = [-1,2,3,4,-3,4,-1]
-//print("DPDemo.maxProfit : \(DPDemo.maxSubArray(prices))")
-//print(Date.init(timeIntervalSinceNow: 0))
+/**
+ * Your CQueue object will be instantiated and called as such:
+ * let obj = CQueue()
+ * obj.appendTail(value)
+ * let ret_2: Int = obj.deleteHead()
+ */
+let obj = CQueue()
 
-
-//print(Date.init(timeIntervalSinceNow: 0))
-////let prices = [7,1,5,3,6,4]
-//let prices = [1,3,2,5]
-//print("DPDemo.maxProfit : \(DPDemo.maxProfit(prices))")
-//print(Date.init(timeIntervalSinceNow: 0))
-
-//print("DPDemo.climbStairs : \(DPDemo.climbStairs(5))")
-
+for i in 0...2 {
+    obj.appendTail(i)
+}
+for _ in 0...1 {
+    print(obj.deleteHead())
+}
+for i in 0...2 {
+    obj.appendTail(i)
+}
+for _ in 0...2 {
+    print(obj.deleteHead())
+}

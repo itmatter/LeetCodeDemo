@@ -13,6 +13,7 @@
 		0408A6132746A2E20004B409 /* LinkListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6122746A2E20004B409 /* LinkListDemo.swift */; };
 		0477C634274E87450069DC3F /* SortDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C633274E87450069DC3F /* SortDemo.swift */; };
 		0477C636274FC8FC0069DC3F /* DPDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C635274FC8FC0069DC3F /* DPDemo.swift */; };
+		04BDDFE727536FAB0085D4DD /* Day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFE627536FAB0085D4DD /* Day01.swift */; };
 		04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E16FF8274A32B800AACCC0 /* TreeDemo.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0408A6122746A2E20004B409 /* LinkListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListDemo.swift; sourceTree = "<group>"; };
 		0477C633274E87450069DC3F /* SortDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDemo.swift; sourceTree = "<group>"; };
 		0477C635274FC8FC0069DC3F /* DPDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDemo.swift; sourceTree = "<group>"; };
+		04BDDFE627536FAB0085D4DD /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
 		04E16FF8274A32B800AACCC0 /* TreeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +71,24 @@
 		040822372740F5F1007BD64F /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				04BDDFE527536F630085D4DD /* Algorithm */,
+				04BDDFE427536F560085D4DD /* 剑指 Offer */,
 				040822382740F5F1007BD64F /* main.swift */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		04BDDFE427536F560085D4DD /* 剑指 Offer */ = {
+			isa = PBXGroup;
+			children = (
+				04BDDFE627536FAB0085D4DD /* Day01.swift */,
+			);
+			path = "剑指 Offer";
+			sourceTree = "<group>";
+		};
+		04BDDFE527536F630085D4DD /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
 				0408223F2740F68F007BD64F /* StringDemo.swift */,
 				0408A6102743ECFE0004B409 /* ArrayDemo.swift */,
 				0408A6122746A2E20004B409 /* LinkListDemo.swift */,
@@ -77,7 +96,7 @@
 				0477C633274E87450069DC3F /* SortDemo.swift */,
 				0477C635274FC8FC0069DC3F /* DPDemo.swift */,
 			);
-			path = LeetCode;
+			path = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 				0477C636274FC8FC0069DC3F /* DPDemo.swift in Sources */,
 				04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */,
 				040822392740F5F1007BD64F /* main.swift in Sources */,
+				04BDDFE727536FAB0085D4DD /* Day01.swift in Sources */,
 				0477C634274E87450069DC3F /* SortDemo.swift in Sources */,
 				040822402740F68F007BD64F /* StringDemo.swift in Sources */,
 			);
