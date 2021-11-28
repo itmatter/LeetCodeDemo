@@ -8,7 +8,20 @@
 import Foundation
 
 
-for i in 0...10 {
-    print("DPDemo.climbStairs : \(DPDemo.climbStairs(i))")
 
-}
+
+//
+//print(Date.init(timeIntervalSinceNow: 0))
+//let prices = [-1,2,3,4,-3,4,-1]
+//print("DPDemo.maxProfit : \(DPDemo.maxSubArray(prices))")
+//print(Date.init(timeIntervalSinceNow: 0))
+
+
+print(Date.init(timeIntervalSinceNow: 0))
+//let prices = [7,1,5,3,6,4]
+let prices = [1,3,2,5]
+print("DPDemo.maxProfit : \(DPDemo.maxProfit(prices))")
+print(Date.init(timeIntervalSinceNow: 0))
+
+//print("DPDemo.climbStairs : \(DPDemo.climbStairs(5))")
+

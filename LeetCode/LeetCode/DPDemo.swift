@@ -21,7 +21,7 @@ import Foundation
 
 class DPDemo {
     
-    // 爬楼梯 (计数型)
+    // 爬楼梯
     // 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
     // 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
     //注意：给定 n 是一个正整数。
@@ -58,4 +58,66 @@ class DPDemo {
        return dp[n - 1]
     }
     
+    
+    // 买卖股票的最佳时机
+    // 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+    // 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+    // 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+    
+    // 题目分析, 这里求的是最大的利润, 最大的利润是maxResult
+    // dp是什么, dp是最优解,应该是叠加的利润, 从买卖的角度来看, 从开始到结束, dp有可能是大的利润
+
+    static func maxProfit(_ prices: [Int]) -> Int {
+        if (prices.count < 2 ){
+            return 0
+        }
+
+        var dp : Int = prices[1]-prices[0]; // 叠加的利润
+        var maxResult = dp;   // 最大的利润
+        var i = 2;
+        print(prices)
+        while (i < prices.count) {
+            let dif = prices[i] - prices[i-1];
+            dp = max(dp, 0) +  dif
+            maxResult = max(dp, maxResult)
+            i += 1;
+        }
+       
+        return maxResult;
+    }
+    
+    
+    
+    // 最大子序和
+    // 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+    
+    static func maxSubArray(_ nums: [Int]) -> Int {
+        if (nums.count == 0) {
+            return 0
+        }
+        
+        // 首先思考, 设置dp, dp代表什么?
+        // 最大和, 可以设定一个maxResult
+        
+        // 最后一步
+        // 比较, 最后一步, 从最后一步考虑, 假设当前的dp是最优解, 也就是最大值, 那么下一个遇到的是nums[i]
+        // 如果是dp的下一步是最优解, 也就是dp+nums[i]组成一个更大的和, 呢么dp = dp + nums[i];
+        // 如果 dp + nums[i] 成为了一个更小的值, 也就是无论下一个nums[i+1]是多少, 也一定是nums[i+1] - nums[i] > 0
+        //
+        // dp = Max(nums[i], dp + nums[i])
+        // dp中可能出现过累计最大的, 所以要用一个maxResult来记录
+        var dp = nums[0]
+        var i = 1
+        let len = nums.count
+        var maxResult = dp
+        
+        while (i < len) {
+            dp = max(nums[i], dp + nums[i])
+            maxResult = max(dp, maxResult)
+            print("nums[i] : \(nums[i])     dp : \(dp)      maxResult:\(maxResult)")
+            i += 1
+        }
+        
+        return maxResult;
+    }
 }
