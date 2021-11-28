@@ -8,7 +8,8 @@
 import Foundation
 
 
-
+let nums = [1,2,3,4]
+print("DPDemo.rob : \(DPDemo.rob(nums))")
 
 //
 //print(Date.init(timeIntervalSinceNow: 0))
@@ -17,11 +18,11 @@ import Foundation
 //print(Date.init(timeIntervalSinceNow: 0))
 
 
-print(Date.init(timeIntervalSinceNow: 0))
-//let prices = [7,1,5,3,6,4]
-let prices = [1,3,2,5]
-print("DPDemo.maxProfit : \(DPDemo.maxProfit(prices))")
-print(Date.init(timeIntervalSinceNow: 0))
+//print(Date.init(timeIntervalSinceNow: 0))
+////let prices = [7,1,5,3,6,4]
+//let prices = [1,3,2,5]
+//print("DPDemo.maxProfit : \(DPDemo.maxProfit(prices))")
+//print(Date.init(timeIntervalSinceNow: 0))
 
 //print("DPDemo.climbStairs : \(DPDemo.climbStairs(5))")
 
