@@ -7,23 +7,12 @@
 
 import Foundation
 
-/**
- * Your MinStack object will be instantiated and called as such:
- * let obj = MinStack()
- * obj.push(x)
- * obj.pop()
- * let ret_3: Int = obj.top()
- * let ret_4: Int = obj.min()
- */
 
-let obj = MinStack()
-obj.push(-2)
-obj.push(0)
-obj.push(-3)
-print( obj.stackArrA)
+let node1 = ListNode(1)
+let node2 = ListNode(3)
+let node3 = ListNode(2)
 
-print( obj.min())
-obj.pop()
-print( obj.top())
-print( obj.min())
+node1.next = node2
+node2.next = node3
 
+print(Offer06.reversePrint(node1))
