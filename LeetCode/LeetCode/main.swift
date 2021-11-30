@@ -8,4 +8,4 @@
 import Foundation
 
 
-print(Offer05.replaceSpace("We are happy."))
+print(Offer58.reverseLeftWords("abcdefg",2))
