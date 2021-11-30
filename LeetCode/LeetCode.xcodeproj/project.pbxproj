@@ -17,6 +17,7 @@
 		04BDDFEB275376F70085D4DD /* Day01_Offer30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFEA275376F70085D4DD /* Day01_Offer30.swift */; };
 		04BDDFED275516B90085D4DD /* Day02_Offer06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFEC275516B80085D4DD /* Day02_Offer06.swift */; };
 		04BDDFEF27551A340085D4DD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFEE27551A340085D4DD /* ListNode.swift */; };
+		04BDDFF127552C650085D4DD /* Day03_Offer05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFF027552C650085D4DD /* Day03_Offer05.swift */; };
 		04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E16FF8274A32B800AACCC0 /* TreeDemo.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		04BDDFEA275376F70085D4DD /* Day01_Offer30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01_Offer30.swift; sourceTree = "<group>"; };
 		04BDDFEC275516B80085D4DD /* Day02_Offer06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02_Offer06.swift; sourceTree = "<group>"; };
 		04BDDFEE27551A340085D4DD /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		04BDDFF027552C650085D4DD /* Day03_Offer05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day03_Offer05.swift; sourceTree = "<group>"; };
 		04E16FF8274A32B800AACCC0 /* TreeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				04BDDFE627536FAB0085D4DD /* Day01_Offer09.swift */,
 				04BDDFEA275376F70085D4DD /* Day01_Offer30.swift */,
 				04BDDFEC275516B80085D4DD /* Day02_Offer06.swift */,
+				04BDDFF027552C650085D4DD /* Day03_Offer05.swift */,
 			);
 			path = "剑指 Offer";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				0477C634274E87450069DC3F /* SortDemo.swift in Sources */,
 				040822402740F68F007BD64F /* StringDemo.swift in Sources */,
 				04BDDFEF27551A340085D4DD /* ListNode.swift in Sources */,
+				04BDDFF127552C650085D4DD /* Day03_Offer05.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

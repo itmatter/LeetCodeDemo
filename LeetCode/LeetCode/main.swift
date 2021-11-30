@@ -8,11 +8,4 @@
 import Foundation
 
 
-let node1 = ListNode(1)
-let node2 = ListNode(3)
-let node3 = ListNode(2)
-
-node1.next = node2
-node2.next = node3
-
-print(Offer06.reversePrint(node1))
+print(Offer05.replaceSpace("We are happy."))
