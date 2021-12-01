@@ -17,6 +17,9 @@ import Foundation
 //输入: [3,2,1,5,6,4] 和 k = 2
 //输出: 5
 
+// print(LeetCode215.findKthLargest([5,6,32,2,4], 3));
+
+
 class LeetCode215 {
     
 

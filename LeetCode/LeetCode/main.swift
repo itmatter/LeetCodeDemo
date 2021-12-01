@@ -8,7 +8,5 @@
 import Foundation
 
 
-//print(LeetCode03.lengthOfLongestSubstring("abbbbabbbba"))
 
-
-print(LeetCode215.findKthLargest([5,6,32,2,4], 3));
+print(Offer03.findRepeatNumber([1,1,2,2,3,3,4,4,0,5,5,6,7,9]))
