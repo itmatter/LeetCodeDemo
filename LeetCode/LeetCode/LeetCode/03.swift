@@ -24,11 +24,9 @@ class LeetCode03 {
         var start = 0;
         var end = 0;
         for c in chars {
-            // abbbbabbbba
             if (hashTable[c] != nil) {
                 start = start > hashTable[c]! + 1  ? start : hashTable[c]! + 1
             }
-            
             hashTable[c] = end
             end += 1
             result = max(result, end - start)
