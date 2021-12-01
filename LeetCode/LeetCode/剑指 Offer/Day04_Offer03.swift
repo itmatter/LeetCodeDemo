@@ -7,6 +7,7 @@
 
 import Foundation
 
+//print(Offer03.findRepeatNumber([1,1,2,2,3,3,4,4,0,5,5,6,7,9]))
 
 // 数组中重复的数字
 class Offer03 {

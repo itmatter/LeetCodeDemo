@@ -9,4 +9,7 @@ import Foundation
 
 
 
-print(Offer03.findRepeatNumber([1,1,2,2,3,3,4,4,0,5,5,6,7,9]))
+print(Offer53.search([0,2,2,3,3,3,3,4,5,5,5,5,6,8,8,8,9,10,10,10,10] , 9) )
+
+
+
