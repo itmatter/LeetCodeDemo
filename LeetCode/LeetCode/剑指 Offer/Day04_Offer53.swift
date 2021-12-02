@@ -7,6 +7,12 @@
 
 import Foundation
 
+
+//print(Offer53.search([0,2,2,3,3,3,3,4,5,5,5,5,6,8,8,8,9,10,10,10,10] , 9) )
+
+
+
+
 class Offer53 {
     
     //统计一个数字在排序数组中出现的次数。
@@ -17,6 +23,7 @@ class Offer53 {
         var left = 0
         var right = nums.count - 1
         var mid = (right - left) / 2
+        
         while (mid != 0 && mid >= 0 && mid <= nums.count - 1) {
             //  判断
             mid = left + (right - left) / 2
