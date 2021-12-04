@@ -17,3 +17,4 @@ let treeNode2   = TreeNode(2, nil, nil)
 let treeNode1   = TreeNode(1, treeNode2, treeNode3)
 
 print(Offer32.levelOrder(treeNode1))
+print(Offer32.levelOrder2(treeNode1))
