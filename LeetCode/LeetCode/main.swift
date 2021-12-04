@@ -8,5 +8,12 @@
 import Foundation
 
 
+let treeNode5   = TreeNode(5, nil, nil)
+let treeNode4   = TreeNode(4, nil, nil)
 
-print(Offer50.firstUniqChar("leetcode"))
+let treeNode3   = TreeNode(3, treeNode4, treeNode5)
+let treeNode2   = TreeNode(2, nil, nil)
+
+let treeNode1   = TreeNode(1, treeNode2, treeNode3)
+
+print(Offer32.levelOrder(treeNode1))

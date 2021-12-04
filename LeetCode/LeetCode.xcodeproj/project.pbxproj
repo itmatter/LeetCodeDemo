@@ -26,6 +26,7 @@
 		04BDDFFE2757B7E40085D4DD /* Day05_Offer04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFFD2757B7E40085D4DD /* Day05_Offer04.swift */; };
 		04BDE000275908DE0085D4DD /* Day05_Offer11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFFF275908DE0085D4DD /* Day05_Offer11.swift */; };
 		04BDE002275B3C570085D4DD /* Day05_Offer50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDE001275B3C570085D4DD /* Day05_Offer50.swift */; };
+		04BDE004275B64020085D4DD /* Day05_Offer32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDE003275B64020085D4DD /* Day05_Offer32.swift */; };
 		04E16FF9274A32B800AACCC0 /* TreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E16FF8274A32B800AACCC0 /* TreeDemo.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		04BDDFFD2757B7E40085D4DD /* Day05_Offer04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05_Offer04.swift; sourceTree = "<group>"; };
 		04BDDFFF275908DE0085D4DD /* Day05_Offer11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05_Offer11.swift; sourceTree = "<group>"; };
 		04BDE001275B3C570085D4DD /* Day05_Offer50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05_Offer50.swift; sourceTree = "<group>"; };
+		04BDE003275B64020085D4DD /* Day05_Offer32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05_Offer32.swift; sourceTree = "<group>"; };
 		04E16FF8274A32B800AACCC0 /* TreeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				04BDDFFD2757B7E40085D4DD /* Day05_Offer04.swift */,
 				04BDDFFF275908DE0085D4DD /* Day05_Offer11.swift */,
 				04BDE001275B3C570085D4DD /* Day05_Offer50.swift */,
+				04BDE003275B64020085D4DD /* Day05_Offer32.swift */,
 			);
 			path = "剑指 Offer";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				04BDDFEB275376F70085D4DD /* Day01_Offer30.swift in Sources */,
 				04BDDFFC2757ACA80085D4DD /* Day04_Offer53.swift in Sources */,
 				04BDDFF82756789F0085D4DD /* 215.swift in Sources */,
+				04BDE004275B64020085D4DD /* Day05_Offer32.swift in Sources */,
 				0477C634274E87450069DC3F /* SortDemo.swift in Sources */,
 				040822402740F68F007BD64F /* StringDemo.swift in Sources */,
 				04BDDFEF27551A340085D4DD /* ListNode.swift in Sources */,
