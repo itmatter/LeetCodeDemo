@@ -8,4 +8,5 @@
 import Foundation
 
 
-Offer11.minArray([3,4,5,6,1,2,3,3])
+
+print(Offer50.firstUniqChar("leetcode"))
