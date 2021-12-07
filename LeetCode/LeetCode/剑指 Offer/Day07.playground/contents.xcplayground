@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Offer10-1'/>
+        <page name='Offer10 斐波那契（Fibonacci）数列'/>
         <page name='Offer10-2'/>
     </pages>
 </playground>
