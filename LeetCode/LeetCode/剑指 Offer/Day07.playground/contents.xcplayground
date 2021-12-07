@@ -3,5 +3,6 @@
     <pages>
         <page name='Offer10- I 斐波那契（Fibonacci）数列'/>
         <page name='Offer10- II 青蛙跳台阶问题'/>
+        <page name='Offer63 股票的最大利润'/>
     </pages>
 </playground>

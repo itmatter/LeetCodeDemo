@@ -92,7 +92,7 @@ class DPDemo {
         }
 
         var dp : Int = prices[1]-prices[0]; // 叠加的利润
-        var maxResult = dp;   // 最大的利润
+        var maxResult = max(dp, 0);   // 最大的利润
         var i = 2;
         print(prices)
         while (i < prices.count) {
