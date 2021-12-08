@@ -43,7 +43,7 @@ func culDp(_ n : Int ,_ dp : inout [Int]) {
     }
 }
 
-let n = 95
+let n = 3
 print(fib(n))
 
 

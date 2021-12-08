@@ -26,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		040822352740F5F1007BD64F /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		046275C72760DA7E00AC771A /* MyPlayground的副本2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本2.playground"; sourceTree = "<group>"; };
+		046275C82760DA7F00AC771A /* MyPlayground的副本.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本.playground"; sourceTree = "<group>"; };
+		046275C92760DA7F00AC771A /* Day08.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day08.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		046275CA2760DA7F00AC771A /* MyPlayground的副本3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本3.playground"; sourceTree = "<group>"; };
+		046275CB2760DA7F00AC771A /* MyPlayground的副本4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本4.playground"; sourceTree = "<group>"; };
 		04BDDFF527566F500085D4DD /* 03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 03.swift; sourceTree = "<group>"; };
 		04BDDFF72756789F0085D4DD /* 215.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 215.swift; sourceTree = "<group>"; };
 		04BDE007275F8E5C0085D4DD /* Day06.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day06.playground; sourceTree = "<group>"; };
@@ -94,6 +99,11 @@
 				04BDE00B275F8F0D0085D4DD /* Day05.playground */,
 				04BDE007275F8E5C0085D4DD /* Day06.playground */,
 				04BDE008275F8E5C0085D4DD /* Day07.playground */,
+				046275C92760DA7F00AC771A /* Day08.playground */,
+				046275C82760DA7F00AC771A /* MyPlayground的副本.playground */,
+				046275C72760DA7E00AC771A /* MyPlayground的副本2.playground */,
+				046275CA2760DA7F00AC771A /* MyPlayground的副本3.playground */,
+				046275CB2760DA7F00AC771A /* MyPlayground的副本4.playground */,
 			);
 			path = "剑指 Offer";
 			sourceTree = "<group>";
