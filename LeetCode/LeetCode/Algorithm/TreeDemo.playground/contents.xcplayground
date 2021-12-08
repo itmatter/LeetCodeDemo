@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='二叉树的最大深度 (队列, 广度优先)'/>
+        <page name='二叉树的最大深度 (队列, 深度优先)'/>
+        <page name='二叉树的最大深度 (递归)'/>
+        <page name='前序遍历 DLR'/>
+        <page name='中序遍历 LDR'/>
+        <page name='后序遍历 LRD'/>
+        <page name='二叉树的层序遍历 (广度优先)'/>
+        <page name='验证二叉搜索树 (中序遍历)'/>
+    </pages>
+</playground>
