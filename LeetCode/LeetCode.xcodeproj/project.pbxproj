@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04BDDFF627566F500085D4DD /* 03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFF527566F500085D4DD /* 03.swift */; };
 		04BDDFF82756789F0085D4DD /* 215.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDDFF72756789F0085D4DD /* 215.swift */; };
 		838281E627608A720069917D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838281E527608A720069917D /* main.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		046275C92760DA7F00AC771A /* Day08.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day08.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		046275CA2760DA7F00AC771A /* MyPlayground的副本3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本3.playground"; sourceTree = "<group>"; };
 		046275CB2760DA7F00AC771A /* MyPlayground的副本4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本4.playground"; sourceTree = "<group>"; };
-		04BDDFF527566F500085D4DD /* 03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 03.swift; sourceTree = "<group>"; };
 		04BDDFF72756789F0085D4DD /* 215.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 215.swift; sourceTree = "<group>"; };
 		04BDE007275F8E5C0085D4DD /* Day06.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day06.playground; sourceTree = "<group>"; };
 		04BDE008275F8E5C0085D4DD /* Day07.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day07.playground; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		04BDDFF427566F2A0085D4DD /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				04BDDFF527566F500085D4DD /* 03.swift */,
 				04BDDFF72756789F0085D4DD /* 215.swift */,
 			);
 			path = LeetCode;
@@ -188,7 +185,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BDDFF627566F500085D4DD /* 03.swift in Sources */,
 				04BDDFF82756789F0085D4DD /* 215.swift in Sources */,
 				838281E627608A720069917D /* main.swift in Sources */,
 			);
