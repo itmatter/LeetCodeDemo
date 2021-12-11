@@ -29,7 +29,7 @@
 		046275C82760DA7F00AC771A /* Day09.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day09.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		046275C92760DA7F00AC771A /* Day08.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day08.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		046275CA2760DA7F00AC771A /* Day11.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day11.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		046275CB2760DA7F00AC771A /* MyPlayground的副本4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground的副本4.playground"; sourceTree = "<group>"; };
+		046275CB2760DA7F00AC771A /* Day12.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day12.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		04BDDFF72756789F0085D4DD /* 215.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 215.swift; sourceTree = "<group>"; };
 		04BDE007275F8E5C0085D4DD /* Day06.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day06.playground; sourceTree = "<group>"; };
 		04BDE008275F8E5C0085D4DD /* Day07.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Day07.playground; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 				046275C82760DA7F00AC771A /* Day09.playground */,
 				046275C72760DA7E00AC771A /* Day10.playground */,
 				046275CA2760DA7F00AC771A /* Day11.playground */,
-				046275CB2760DA7F00AC771A /* MyPlayground的副本4.playground */,
+				046275CB2760DA7F00AC771A /* Day12.playground */,
 			);
 			path = "剑指 Offer";
 			sourceTree = "<group>";
